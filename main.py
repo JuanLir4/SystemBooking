@@ -1,9 +1,10 @@
-#ALGORITMO PARA RESERVA DE QUADRA
+#ALGORITMO PARA RESERVA DE LOCAL
+#NÃO TEM INTERFACE GRAFICA
 import pyodbc
 
 
 
-def CadastrarHorario():  #função em que o usuario cadastra o horario na quadra
+def CadastrarHorario():  #função em que o adm cadastra o horario no local
     conexaodb = pyodbc.connect("Driver={SQLite3 ODBC Driver};Server=localhost;Database=TabelaHorario.db")
 
     cursor = conexaodb.cursor()
@@ -28,7 +29,7 @@ def CadastrarHorario():  #função em que o usuario cadastra o horario na quadra
     newhora_inicial = input()
     print("Insira Hora Final:(formato: 00:00)")
     newhora_final = input()
-    #MUDAR TUDO, CRIAR NOVA TABELA NO BANCO DE DADOS COM INTERVALO DE HORAS OU SEJA: HORA FINAL E INICIAL
+    
     try:
         #verificando formato da hora
         horas, minutos = map(int, newhora_inicial.split(':'))
@@ -109,13 +110,10 @@ def MostrarHorarios(): #função mostra todos os horarios cadastrados e filtrand
              print(f"{i}\n")
 
 
-    
-
-
 
 
 while True:  #menu
-    print("SISTEMA DE REGISTRO DA QUADRA")
+    print("SISTEMA DE RESERVA DO LOCAL XXXXX")
     print("1 - Para Cadastrar um Horario\n2 - Para Verificar Horarios Cadastrados\n3 - Para Encerrar o Programa")
     number1 = int(input())
     
