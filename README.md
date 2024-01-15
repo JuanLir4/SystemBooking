@@ -38,4 +38,3 @@ Lembre-se de que este aplicativo não possui interface gráfica, mas a interaç�
 2. Instale a biblioteca pyodbc usando o comando `pip install pyodbc`.
 3. Execute o programa e siga as instruções no console para cadastrar ou visualizar reservas.
 
-Este é um exemplo básico de um README. Certifique-se de fornecer informações mais detalhadas conforme necessário, incluindo pré-requisitos, instruções de instalação, e outros detalhes relevantes para os usuários do seu sistema.
